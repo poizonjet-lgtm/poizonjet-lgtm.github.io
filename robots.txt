@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /privacy.html
 
-Sitemap: https://spiritvoid625-lgtm.github.io/sitemap.xml
+Sitemap: https://poizonjet-lgtm.github.io/sitemap.xml
