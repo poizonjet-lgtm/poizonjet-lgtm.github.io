@@ -1,0 +1,1524 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--PJ:HEAD-START-->
+<title>POIZON JET — доставка с Poizon и из Китая в Москву</title>
+<!--PJ:HEAD-END-->
+<meta name="description" content="Выкуп и доставка с Poizon, Goofish, Taobao и других площадок Китая. Авиа 1–5 дней, фиксированная комиссия от 750 ₽, калькулятор стоимости. Пункт выдачи у м. Юго-Западная, отправка по России.">
+<meta name="theme-color" content="#050B18">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="POIZON JET">
+<meta property="og:title" content="POIZON JET — доставка с Poizon и из Китая в Москву">
+<meta property="og:description" content="Авиа 1–5 дней, фиксированная комиссия от 750 ₽, пункт выдачи у м. Юго-Западная. Посчитай стоимость заказа на сайте.">
+<meta property="og:image" content="https://spiritvoid625-lgtm.github.io/og-image.png">
+<meta property="og:url" content="https://spiritvoid625-lgtm.github.io/">
+<link rel="canonical" href="https://spiritvoid625-lgtm.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "POIZON JET",
+  "description": "Выкуп и доставка товаров с Poizon и других китайских площадок, пункт выдачи заказов в Москве",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "проспект Вернадского, 109",
+    "addressLocality": "Москва",
+    "addressCountry": "RU"
+  },
+  "hasMap": "https://yandex.ru/maps/org/poizon_jet/90494048125/",
+  "sameAs": ["https://yandex.ru/maps/org/poizon_jet/90494048125/", "https://t.me/Poizon_Jet", "https://www.tiktok.com/@poizonjet"]
+}
+</script>
+<!--PJ:SHARED-START-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@800;900&display=swap">
+<style>
+/* Концепция: ночной аэропорт. Посадочный талон в первом экране, тарифы как табло вылетов, синий свет на тёмной полосе. */
+:root {
+  color-scheme: dark;
+  --bg: #050B18;
+  --surface: #0A1628;
+  --surface-2: #0F1F3A;
+  --line: rgba(127, 168, 217, 0.16);
+  --line-strong: rgba(127, 168, 217, 0.34);
+  --fg: #F4F7FC;
+  --text: #C6D3E8;
+  --muted: #7FA8D9;
+  --accent: #2F7BFF;
+  --glow: #4F93FF;
+  --btn: #1D63E0;
+  --btn-hover: #2F7BFF;
+  --display: "Montserrat", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --body: "Manrope", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --r: 14px;
+  --header-h: 64px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 12px); -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 60;
+  background: var(--bg);
+}
+img { max-width: 100%; }
+a { color: var(--glow); }
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, label:focus-within {
+  outline: 2px solid var(--glow);
+  outline-offset: 3px;
+}
+[hidden] { display: none !important; }
+
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (min-width: 720px) {
+  .wrap { padding-left: max(32px, env(safe-area-inset-left, 0px)); padding-right: max(32px, env(safe-area-inset-right, 0px)); }
+}
+
+/* ---------- Типографика ---------- */
+.kicker {
+  font-family: var(--mono);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.h1, .h2, .h3 {
+  font-family: var(--display);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--fg);
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+  margin: 0;
+}
+.h1 { font-size: clamp(36px, 6.4vw, 76px); line-height: 0.98; }
+.h2 { font-size: clamp(28px, 4.2vw, 48px); line-height: 1.02; }
+.h3 { font-size: 18px; line-height: 1.15; letter-spacing: -0.005em; }
+.blue { color: var(--accent); text-shadow: 0 0 28px rgba(47, 123, 255, 0.45); }
+.lead { font-size: clamp(16px, 1.7vw, 19px); line-height: 1.6; color: var(--text); max-width: 34em; margin: 0; }
+.small { font-size: 14px; color: var(--muted); }
+.num { font-variant-numeric: tabular-nums; }
+
+.section { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--line); }
+.section-head { display: grid; gap: 14px; margin-bottom: clamp(28px, 4vw, 48px); max-width: 760px; }
+.section-head p:not(.kicker) { margin: 0; color: var(--text); }
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 22px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--btn); color: #FFFFFF; box-shadow: 0 8px 30px rgba(29, 99, 224, 0.35); }
+.btn-primary:hover { background: var(--btn-hover); }
+.btn-ghost { background: transparent; color: var(--fg); border-color: var(--line-strong); }
+.btn-ghost:hover { border-color: var(--glow); }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* ---------- Шапка ---------- */
+.header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 50;
+  background: rgba(5, 11, 24, 0.86);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+.header .wrap { display: flex; align-items: center; gap: 24px; height: var(--header-h); }
+.logo {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.logo span { color: var(--accent); }
+.nav { display: none; gap: 22px; margin-left: auto; }
+.nav a { color: var(--text); text-decoration: none; font-size: 14px; font-weight: 600; }
+.nav a:hover { color: var(--fg); }
+.header-cta { margin-left: auto; min-height: 42px; padding: 0 16px; font-size: 14px; }
+.header-pay { display: none; }
+.header-tg { display: none; margin-left: auto; font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text); text-decoration: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 8px 12px; }
+@media (max-width: 899px) {
+  .header .btn-primary.header-cta { display: none; }
+  .header-tg { display: inline-flex; }
+}
+@media (min-width: 1040px) {
+  .nav { display: flex; }
+  .header-cta { margin-left: 0; }
+}
+
+/* ---------- Первый экран ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(90% 70% at 78% 30%, rgba(47, 123, 255, 0.16) 0%, rgba(5, 11, 24, 0) 60%),
+    radial-gradient(120% 90% at 50% 0%, #0A1628 0%, var(--bg) 70%);
+}
+.hero::after {
+  /* огни взлётной полосы */
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, rgba(79, 147, 255, 0.55) 0 10px, transparent 10px 46px);
+  opacity: 0.5;
+}
+.hero .wrap {
+  display: grid;
+  gap: 44px;
+  padding-block: clamp(40px, 7vw, 96px) clamp(48px, 7vw, 96px);
+  align-items: center;
+}
+@media (min-width: 960px) {
+  .hero .wrap { grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 56px; }
+}
+.hero-copy { display: grid; gap: 24px; min-width: 0; }
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.facts li {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 7px 12px;
+  white-space: nowrap;
+}
+
+/* Посадочный талон */
+.pass {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: linear-gradient(160deg, var(--surface-2) 0%, var(--surface) 100%);
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(47, 123, 255, 0.06) inset;
+  min-width: 0;
+}
+.pass-main { padding: 22px 22px 20px; display: grid; gap: 18px; min-width: 0; }
+.pass-top { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
+.pass-top .kicker { font-size: 11px; }
+.pass-badge {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--glow);
+  border-radius: 6px;
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+.route { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; }
+.route-code { font-family: var(--display); font-weight: 900; font-size: clamp(40px, 9vw, 56px); line-height: 1; color: var(--fg); letter-spacing: -0.02em; }
+.route-city { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.route-line { position: relative; height: 2px; background: rgba(127, 168, 217, 0.22); }
+.route-line i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 100%;
+  background: var(--accent);
+  box-shadow: 0 0 14px var(--accent);
+  transform-origin: left center;
+  animation: draw 1.4s cubic-bezier(.2, .7, .2, 1) 0.3s both;
+}
+.route-line svg {
+  position: absolute;
+  top: 50%;
+  right: -4px;
+  width: 22px;
+  height: 22px;
+  transform: translateY(-50%);
+  color: var(--glow);
+  animation: glide 1.4s cubic-bezier(.2, .7, .2, 1) 0.3s both;
+}
+@keyframes draw { from { transform: scaleX(0.04); } to { transform: scaleX(1); } }
+@keyframes glide { from { right: 92%; opacity: 0.4; } to { right: -4px; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .route-line i, .route-line svg { animation: none; }
+}
+.pass-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 18px; margin: 0; }
+.pass-fields div { min-width: 0; }
+.pass-fields dt { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+.pass-fields dd { margin: 3px 0 0; color: var(--fg); font-weight: 700; font-size: 15px; line-height: 1.35; }
+.pass-fields .wide { grid-column: 1 / -1; }
+.pass-stub {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 22px 18px;
+  border-top: 2px dashed var(--line-strong);
+}
+.pass-stub::before, .pass-stub::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+}
+.pass-stub::before { left: -11px; }
+.pass-stub::after { right: -11px; }
+.barcode {
+  flex: 1;
+  max-width: 220px;
+  height: 34px;
+  background: repeating-linear-gradient(90deg,
+    var(--text) 0 2px, transparent 2px 4px, var(--text) 4px 5px, transparent 5px 8px,
+    var(--text) 8px 11px, transparent 11px 12px, var(--text) 12px 13px, transparent 13px 16px);
+  opacity: 0.55;
+  border-radius: 2px;
+}
+.pass-stub p { margin: 0; text-align: right; }
+.pass-stub strong { display: block; font-family: var(--display); font-weight: 900; font-size: 26px; line-height: 1; color: var(--fg); }
+
+/* ---------- Цифры ---------- */
+.stats { border-top: 1px solid var(--line); background: var(--surface); }
+.stats ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.stats li { padding: 26px 0; display: grid; gap: 6px; align-content: start; border-bottom: 1px solid var(--line); }
+.stats li:nth-child(odd) { padding-right: 16px; border-right: 1px solid var(--line); }
+.stats li:nth-child(even) { padding-left: 16px; }
+.stats li:nth-last-child(-n+2) { border-bottom: 0; }
+@media (min-width: 860px) {
+  .stats ul { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .stats li { padding: 34px 24px; border-bottom: 0; border-right: 1px solid var(--line); }
+  .stats li:nth-child(odd), .stats li:nth-child(even) { padding-left: 24px; padding-right: 24px; }
+  .stats li:first-child { padding-left: 0; }
+  .stats li:last-child { border-right: 0; }
+}
+.stat-num { font-family: var(--display); font-weight: 900; font-size: clamp(30px, 4vw, 44px); line-height: 1; color: var(--fg); }
+.stat-num span { color: var(--accent); }
+.stat-label { font-size: 14px; color: var(--muted); line-height: 1.45; }
+
+/* ---------- Калькулятор ---------- */
+.calc {
+  display: grid;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media (min-width: 900px) { .calc { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); } }
+.calc-form { padding: clamp(20px, 3vw, 36px); display: grid; gap: 26px; min-width: 0; }
+.field { display: grid; gap: 10px; min-width: 0; border: 0; padding: 0; margin: 0; }
+.field-label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); display: flex; gap: 10px; align-items: center; padding: 0; }
+.chip-example { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.14em; color: var(--bg); background: var(--muted); border-radius: 5px; padding: 2px 6px; }
+.input-wrap { position: relative; }
+.input {
+  width: 100%;
+  min-height: 60px;
+  background: var(--bg);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  color: var(--fg);
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: 28px;
+  padding: 0 64px 0 18px;
+  font-variant-numeric: tabular-nums;
+}
+.input:focus { outline: none; border-color: var(--glow); box-shadow: 0 0 0 3px rgba(79, 147, 255, 0.25); }
+.input-unit { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); font-family: var(--display); font-weight: 800; font-size: 22px; color: var(--muted); pointer-events: none; }
+.input-sm { min-height: 52px; font-size: 22px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.15s, background-color 0.15s, color 0.15s;
+}
+.chip input:checked + span { background: rgba(47, 123, 255, 0.14); border-color: var(--accent); color: var(--fg); }
+.chip input:focus-visible + span { outline: 2px solid var(--glow); outline-offset: 2px; }
+.methods { display: grid; gap: 8px; }
+@media (min-width: 560px) { .methods { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.method span { display: grid; gap: 2px; padding: 12px 14px; min-height: 0; align-content: center; }
+.method b { color: var(--fg); font-size: 15px; }
+.method small { font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.08em; color: var(--muted); font-weight: 500; }
+.hint { margin: 0; font-size: 13.5px; color: var(--muted); line-height: 1.5; }
+
+.calc-result {
+  padding: clamp(20px, 3vw, 36px);
+  background:
+    radial-gradient(120% 80% at 100% 0%, rgba(47, 123, 255, 0.18) 0%, rgba(10, 22, 40, 0) 60%),
+    var(--surface-2);
+  border-top: 1px solid var(--line-strong);
+  display: grid;
+  gap: 22px;
+  align-content: start;
+  min-width: 0;
+}
+@media (min-width: 900px) { .calc-result { border-top: 0; border-left: 1px solid var(--line-strong); } }
+.receipt { list-style: none; margin: 0; padding: 0; display: grid; }
+.receipt li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 12px 0; border-bottom: 1px dashed var(--line-strong); }
+.receipt li span { min-width: 0; }
+.receipt li span small { display: block; font-family: var(--mono); font-size: 11.5px; color: var(--muted); letter-spacing: 0.04em; }
+.receipt li b { color: var(--fg); font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.total { display: grid; gap: 4px; }
+.total-sum { font-family: var(--display); font-weight: 900; font-size: clamp(36px, 5vw, 52px); line-height: 1; color: var(--fg); font-variant-numeric: tabular-nums; }
+.total-sum.range { font-size: clamp(28px, 4vw, 40px); }
+.total-eta { font-family: var(--mono); font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--glow); }
+.calc-result .btn { width: 100%; }
+.rate-line { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
+.rate-line b { color: var(--fg); }
+
+/* ---------- Табло тарифов ---------- */
+.tariffs { display: grid; gap: 28px; }
+@media (min-width: 980px) { .tariffs { grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr); gap: 32px; } }
+.board { align-self: start; background: #02060F; border: 1px solid var(--line-strong); border-radius: 16px; overflow: hidden; min-width: 0; }
+.board-head, .board-row { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.7fr) minmax(0, 1.2fr); gap: 16px; padding: 16px 20px; }
+.board-head { font-family: var(--mono); font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line-strong); }
+.board-row { border-bottom: 1px solid var(--line); align-items: baseline; }
+.board-row:last-of-type { border-bottom: 0; }
+.board-row .t-name { font-family: var(--mono); font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg); }
+.board-row .t-days { font-family: var(--mono); color: var(--glow); letter-spacing: 0.04em; white-space: nowrap; }
+.board-row .t-rate { color: var(--text); line-height: 1.5; }
+.board-row .t-rate b { color: var(--fg); font-variant-numeric: tabular-nums; }
+.board-note { margin: 0; padding: 14px 20px; border-top: 1px solid var(--line-strong); font-size: 14px; color: var(--muted); }
+@media (max-width: 640px) {
+  .board-head { display: none; }
+  .board-row { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; }
+  .board-row .t-rate { grid-column: 1 / -1; }
+}
+.ladder { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.ladder-title { margin: 0 0 4px; }
+.step { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 18px; border-radius: 12px; border: 1px solid var(--line-strong); background: var(--surface); }
+.step span { color: var(--text); font-size: 15px; }
+.step b { font-family: var(--display); font-weight: 900; font-size: 22px; color: var(--fg); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.step.vip { border-style: dashed; background: transparent; }
+.step.vip b { font-family: var(--body); font-weight: 700; font-size: 15px; color: var(--glow); }
+.promise { margin: 6px 0 0; padding: 16px 18px; border-left: 2px solid var(--accent); color: var(--fg); font-weight: 600; background: rgba(47, 123, 255, 0.06); border-radius: 0 12px 12px 0; }
+
+/* ---------- Шаги ---------- */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: s; }
+.steps > li { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; align-content: start; padding: 22px 0; border-top: 1px solid var(--line); }
+.steps > li:last-child { border-bottom: 1px solid var(--line); }
+.step-n { font-family: var(--display); font-weight: 900; font-size: 34px; line-height: 1; color: var(--accent); font-variant-numeric: tabular-nums; }
+.steps p { margin: 6px 0 0; max-width: 60ch; }
+@media (min-width: 900px) {
+  .steps { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+  .steps > li { grid-template-columns: minmax(0, 1fr); padding: 26px 22px 26px 0; border-top: 1px solid var(--line-strong); border-bottom: 0 !important; }
+  .steps > li + li { padding-left: 22px; border-left: 1px solid var(--line); }
+}
+.track { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; padding: 0; list-style: none; }
+.track li { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: var(--fg); background: rgba(47, 123, 255, 0.12); border: 1px solid rgba(47, 123, 255, 0.35); border-radius: 6px; padding: 3px 7px; }
+.photo-note { margin-top: 28px; display: flex; gap: 16px; align-items: center; padding: 18px 20px; border: 1px solid var(--line-strong); border-radius: 14px; background: var(--surface); }
+.photo-note svg { width: 34px; height: 34px; flex: none; color: var(--glow); }
+.photo-note p { margin: 0; }
+.photo-note b { color: var(--fg); }
+
+/* ---------- Площадки ---------- */
+.markets { display: grid; gap: 12px; }
+@media (min-width: 860px) { .markets { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; } }
+.market {
+  padding: 20px;
+  border-radius: var(--r);
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  align-content: start;
+  transition: border-color 0.25s, transform 0.25s;
+}
+@media (min-width: 860px) { .market { grid-template-columns: minmax(0, 1fr); padding: 24px; } }
+.market-body { display: grid; gap: 8px; min-width: 0; }
+.market .h3 { font-size: 20px; }
+.market .kicker { font-size: 11px; }
+.market p { margin: 0; }
+
+/* Плашка площадки: если в папке logos/ лежит файл логотипа — показывается он, иначе название */
+.mlogo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 18px;
+  background: linear-gradient(150deg, #13284A 0%, #0A1628 100%);
+  border: 1px solid var(--line-strong);
+  overflow: hidden;
+  text-align: center;
+  line-height: 1;
+}
+.mlogo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.mlogo.has-img { background: #FFFFFF; }
+.mlogo.has-img .mlogo-text { visibility: hidden; }
+.mlogo-text { display: grid; gap: 6px; }
+.mlogo-cn { font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif; font-weight: 700; font-size: 24px; color: var(--fg); }
+.mlogo-lat { font-family: var(--mono); font-size: 9px; letter-spacing: 0.16em; color: var(--glow); text-transform: uppercase; }
+
+/* Бегущая лента площадок */
+.belt {
+  margin-top: 22px;
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+.belt-track { display: flex; gap: 12px; width: max-content; animation: belt 38s linear infinite; }
+.belt:hover .belt-track { animation-play-state: paused; }
+@keyframes belt { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 6px)); } }
+.belt-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px 10px 10px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  white-space: nowrap;
+}
+.belt-item .mlogo { width: 44px; height: 44px; border-radius: 11px; }
+.belt-item .mlogo-cn { font-size: 13px; letter-spacing: -0.03em; }
+.belt-item .mlogo-lat { display: none; }
+.belt-item b { font-family: var(--mono); font-weight: 500; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg); }
+@media (prefers-reduced-motion: reduce) {
+  .belt { -webkit-mask-image: none; mask-image: none; }
+  .belt-track { animation: none; flex-wrap: wrap; width: auto; }
+  .belt-track [aria-hidden="true"] { display: none; }
+}
+
+/* ---------- Доверие ---------- */
+.trust { display: grid; gap: 14px; }
+@media (min-width: 760px) { .trust { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1040px) { .trust { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.trust-item { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 14px; padding: 20px; border-radius: var(--r); border: 1px solid var(--line); }
+.trust-item svg { width: 40px; height: 40px; padding: 8px; border-radius: 50%; border: 1px solid rgba(47, 123, 255, 0.6); color: var(--glow); }
+.trust-item b { display: block; color: var(--fg); margin-bottom: 4px; }
+.trust-item p { margin: 0; font-size: 15px; }
+
+/* ---------- Отзывы ---------- */
+.reviews-top { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; }
+.swipe-hint { display: none; font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.reviews { display: grid; gap: 14px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.review {
+  margin: 0;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-width: 0;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.review-photo { position: relative; aspect-ratio: 4 / 5; max-width: 100%; background: var(--surface-2); overflow: hidden; }
+.review-photo img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s cubic-bezier(.2, .7, .2, 1); }
+.review-body { padding: 18px 20px 20px; display: grid; gap: 12px; align-content: space-between; }
+.review blockquote { margin: 0; color: var(--fg); font-size: 15.5px; line-height: 1.55; }
+.review blockquote.clamp { display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+.more { justify-self: start; background: none; border: 0; padding: 0; color: var(--glow); font: 600 14px/1.4 var(--body); cursor: pointer; }
+.review figcaption { font-family: var(--mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.reviews-link { margin-top: 22px; }
+@media (min-width: 1040px) { .review-photo { aspect-ratio: 1 / 1; } }
+@media (min-width: 720px) and (max-width: 1039px) { .reviews { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Телефон: отзывы листаются пальцем */
+@media (max-width: 719px) {
+  .swipe-hint { display: inline; }
+  .reviews {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+    margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+    scroll-padding-left: max(16px, env(safe-area-inset-left, 0px));
+  }
+  .reviews::-webkit-scrollbar { display: none; }
+  .review { flex: 0 0 80%; scroll-snap-align: start; }
+  .review-photo { aspect-ratio: 1 / 1; }
+}
+
+/* ---------- Реселлерам ---------- */
+.resell { display: grid; gap: 28px; padding: clamp(24px, 4vw, 48px); border-radius: 22px; border: 1px solid var(--line-strong); background: linear-gradient(140deg, var(--surface-2), var(--bg)); }
+@media (min-width: 940px) { .resell { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; } }
+.resell-price { display: grid; gap: 6px; }
+.resell-price .big { font-family: var(--display); font-weight: 900; font-size: clamp(56px, 9vw, 96px); line-height: 0.95; color: var(--fg); }
+.resell-price .big span { color: var(--accent); }
+.list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.list li { position: relative; padding-left: 26px; }
+.list li::before { content: ""; position: absolute; left: 2px; top: 0.62em; width: 12px; height: 2px; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+
+/* ---------- Условия ---------- */
+.terms { display: grid; gap: 14px; }
+@media (min-width: 860px) { .terms { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.term { padding: 22px; border-radius: var(--r); border: 1px solid var(--line); display: grid; gap: 12px; align-content: start; }
+.term .h3 { font-size: 17px; }
+.term.yes { border-color: rgba(47, 123, 255, 0.55); }
+.term p { margin: 0; }
+
+/* ---------- FAQ ---------- */
+.faq { display: grid; gap: 0; max-width: 860px; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 18px; padding: 20px 0; color: var(--fg); font-weight: 700; font-size: 17px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: var(--mono); font-size: 22px; line-height: 1; color: var(--glow); transition: transform 0.2s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0 0 20px; max-width: 65ch; }
+
+/* ---------- Контакты ---------- */
+.contact { display: grid; gap: 36px; }
+@media (min-width: 960px) { .contact { grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); align-items: start; } }
+.contact .h2 { font-size: clamp(32px, 5vw, 60px); }
+.links { display: grid; gap: 10px; }
+.link-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 18px; border-radius: 12px; border: 1px solid var(--line-strong); text-decoration: none; color: var(--fg); font-weight: 700; }
+.link-row:hover { border-color: var(--glow); }
+.link-row small { font-family: var(--mono); font-weight: 500; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+.address { margin-top: 8px; padding: 20px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 6px; }
+.address b { color: var(--fg); font-size: 18px; }
+.address p { margin: 0; }
+
+/* ---------- Подвал ---------- */
+.footer { border-top: 1px solid var(--line); padding-block: 32px 40px; font-size: 14px; color: var(--muted); }
+.footer .wrap { display: grid; gap: 12px; }
+.footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.footer a { color: var(--text); }
+.footer p { margin: 0; }
+
+/* ---------- Плавность ---------- */
+.btn, .chip span, .link-row, .step, .trust-item, .term, .faq summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+@media (hover: hover) {
+  .market:hover, .review:hover, .trust-item:hover, .link-row:hover { border-color: rgba(79, 147, 255, 0.55); transform: translateY(-3px); }
+  .review:hover .review-photo img { transform: scale(1.04); }
+  .btn-primary:hover { box-shadow: 0 12px 36px rgba(47, 123, 255, 0.45); }
+}
+.trust-item, .link-row { transition: border-color 0.25s, transform 0.25s; }
+.faq details p { animation: faqIn 0.35s ease both; }
+@keyframes faqIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+/* появление блоков при прокрутке: стартуют видимыми, только чуть ниже и прозрачнее */
+.reveal-on .reveal { opacity: 0.35; transform: translateY(26px); transition: opacity 0.7s cubic-bezier(.2, .7, .2, 1), transform 0.7s cubic-bezier(.2, .7, .2, 1); }
+.reveal-on .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on .reveal { opacity: 1; transform: none; transition: none; }
+  .faq details p { animation: none; }
+  .market, .review, .trust-item, .link-row, .review-photo img { transition: none; }
+}
+.total-sum, .mini-total b { transition: color 0.2s; }
+.flash { color: var(--glow) !important; }
+
+/* ---------- Телефон ---------- */
+.mini-total { display: none; }
+@media (max-width: 899px) {
+  .mini-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(47, 123, 255, 0.1);
+    border: 1px solid rgba(47, 123, 255, 0.4);
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+  }
+  .mini-total b { font-family: var(--display); font-weight: 900; font-size: 22px; color: var(--fg); white-space: nowrap; font-variant-numeric: tabular-nums; }
+}
+@media (max-width: 599px) {
+  .hero .wrap { gap: 32px; padding-block: 28px 40px; }
+  .hero-copy { gap: 20px; }
+  .h1 { font-size: clamp(31px, 9.2vw, 44px); }
+  .lead { font-size: 16px; }
+  .hero .btn-row { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .hero .btn-row .btn { width: 100%; }
+  .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .facts li { white-space: normal; text-align: center; font-size: 11px; letter-spacing: 0.08em; padding: 9px 8px; border-radius: 10px; line-height: 1.3; }
+  .pass-main { padding: 18px 18px 16px; gap: 14px; }
+  .pass-stub { padding: 14px 18px 16px; }
+  .route-code { font-size: 40px; }
+  .section { padding-block: 56px; }
+  .section-head { margin-bottom: 24px; }
+  .calc { border-radius: 16px; }
+  .input { font-size: 24px; min-height: 56px; }
+  .chip span { min-height: 42px; padding: 0 13px; font-size: 14.5px; }
+  .method span { display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 48px; }
+  .step b { font-size: 19px; }
+  .resell { padding: 22px; }
+  .contact .h2 { font-size: 30px; }
+  .stat-num { font-size: 30px; }
+}
+@media (max-width: 380px) {
+  .chips { gap: 6px; }
+  .chip span { padding: 0 11px; font-size: 14px; }
+  .pass-fields { gap: 12px 12px; }
+  .route { gap: 10px; }
+  .route-code { font-size: 34px; }
+}
+/* Планшет */
+@media (min-width: 600px) and (max-width: 959px) {
+  .pass { max-width: 560px; }
+  .hero .wrap { gap: 40px; }
+}
+
+/* ---------- Нижняя панель на телефоне и cookie ---------- */
+.mbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 55;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 8px;
+  padding: 10px max(12px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+  background: rgba(5, 11, 24, 0.94);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid var(--line-strong);
+}
+.mbar .btn { min-height: 48px; padding: 0 12px; font-size: 15px; }
+@media (min-width: 900px) { .mbar { display: none; } }
+@media (max-width: 899px) { body { padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px)); } }
+.cookie {
+  position: fixed;
+  z-index: 56;
+  left: max(12px, env(safe-area-inset-left, 0px));
+  right: max(12px, env(safe-area-inset-right, 0px));
+  bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+  max-width: 560px;
+  margin: 0 auto;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+@media (min-width: 900px) { .cookie { bottom: calc(20px + env(safe-area-inset-bottom, 0px)); } }
+.cookie p { margin: 0; }
+.cookie button { flex: none; min-height: 40px; padding: 0 14px; font-size: 14px; }
+</style>
+<!--PJ:SHARED-END-->
+</head>
+<body>
+<!--PJ:BODY-START-->
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="POIZON JET, наверх">POIZON <span>JET</span></a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#calc">Калькулятор</a>
+      <a href="#tariffs">Тарифы</a>
+      <a href="#how">Как заказать</a>
+      <a href="#reviews">Отзывы</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-tg" data-link="channel" data-goal="channel_click" href="https://t.me/Poizon_Jet" target="_blank" rel="noopener">Канал</a>
+    <a class="btn btn-ghost header-cta header-pay" data-link="pay" href="#" target="_blank" rel="noopener">Оплатить заказ</a>
+    <a class="btn btn-primary header-cta" data-link="manager" data-goal="manager_click" href="https://t.me/POIZONJETMANAGER" target="_blank" rel="noopener">Написать менеджеру</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Первый экран -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="kicker">CAN → MOW · пункт выдачи на Юго-Западной</p>
+        <h1 class="h1">Доставка с <span class="blue">Poizon</span> и из Китая в Москву</h1>
+        <p class="lead">Выкупаем оригинальные вещи с Poizon, Goofish, Taobao и других площадок. Комиссия фиксированная, доставка по фактическому весу. Забираешь сам у метро Юго-Западная или получаешь в своём городе.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#calc">Посчитать стоимость</a>
+          <a class="btn btn-ghost" data-link="manager" data-goal="manager_click" href="https://t.me/POIZONJETMANAGER" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 3.2 2.9 10.4c-1.3.5-1.2 1.3-.2 1.6l4.8 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.4-1.5ZM9.2 13.3l9.4-5.9c.5-.3.9-.1.5.2l-8 7.2-.3 3.3-1.6-4.8Z"/></svg>
+            Написать менеджеру
+          </a>
+        </div>
+        <ul class="facts">
+          <li>Авиа 1–5 дней</li>
+          <li>Комиссия от <span data-cfg="com1">750</span> ₽</li>
+          <li>Рекорд — 2 дня</li>
+          <li>Пр-т Вернадского, 109</li>
+        </ul>
+      </div>
+
+      <article class="pass" aria-label="Пример реального заказа: Anta KT10 Dallas, доставка за 2 дня">
+        <div class="pass-main">
+          <div class="pass-top">
+            <p class="kicker">Посадочный талон · реальный заказ</p>
+            <span class="pass-badge">рекорд</span>
+          </div>
+          <div class="route">
+            <div><span class="route-code">CAN</span><span class="route-city">Гуанчжоу</span></div>
+            <div class="route-line" aria-hidden="true"><i></i>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.5 11.2 14 7.7V3.5a1.5 1.5 0 0 0-3 0v4.2L3.5 11.2a.9.9 0 0 0-.5.8v.9l8-2.3v5.2l-2.2 1.6v1.1l3.2-.9 3.2.9v-1.1L13 15.8v-5.2l8 2.3V12a.9.9 0 0 0-.5-.8Z" transform="rotate(90 12 12)"/></svg>
+            </div>
+            <div style="text-align:right"><span class="route-code">MOW</span><span class="route-city">Москва</span></div>
+          </div>
+          <dl class="pass-fields">
+            <div class="wide"><dt>Груз</dt><dd>Anta KT10 «Dallas»</dd></div>
+            <div><dt>Оформлен</dt><dd class="num">15.09 · 21:25</dd></div>
+            <div><dt>В Москве</dt><dd class="num">17.09</dd></div>
+            <div><dt>Тариф</dt><dd>Авиа ручная</dd></div>
+            <div><dt>Обычный срок</dt><dd>1–5 дней</dd></div>
+          </dl>
+        </div>
+        <div class="pass-stub">
+          <span class="barcode" aria-hidden="true"></span>
+          <p><span class="kicker">в пути</span><strong>2 дня</strong></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Цифры -->
+  <section class="stats" aria-label="POIZON JET в цифрах">
+    <div class="wrap">
+      <ul>
+        <li><span class="stat-num">1 000<span>+</span></span><span class="stat-label">позиций выкупили для клиентов</span></li>
+        <li><span class="stat-num">2 <span>дня</span></span><span class="stat-label">рекорд доставки Гуанчжоу → Москва</span></li>
+        <li><span class="stat-num">1 300</span><span class="stat-label">подписчиков в Telegram-канале</span></li>
+        <li><span class="stat-num">с мая</span><span class="stat-label">своя точка выдачи в Москве, 2026</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Калькулятор -->
+  <section class="section" id="calc">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Калькулятор · цена под ключ</p>
+        <h2 class="h2">Посчитай <span class="blue">стоимость</span> заказа</h2>
+        <p>Впиши цену вещи в юанях с карточки товара для твоего размера. Калькулятор сложит товар, доставку и нашу комиссию.</p>
+      </div>
+
+      <div class="calc">
+        <form class="calc-form" id="calcForm" novalidate>
+          <div class="field">
+            <label class="field-label" for="cny">Цена товара <span class="chip-example" id="exampleChip">пример</span></label>
+            <div class="input-wrap">
+              <input class="input" id="cny" name="cny" type="text" inputmode="decimal" autocomplete="off" value="699" aria-describedby="cnyHint">
+              <span class="input-unit">¥</span>
+            </div>
+            <p class="hint" id="cnyHint">Цену смотри на Poizon, Goofish или Taobao. Не нашёл сам? Пришли фото менеджеру, найдём.</p>
+            <a class="mini-total" href="#calcResult"><span>Под ключ ≈</span><b id="miniTotal">12 777 ₽</b></a>
+          </div>
+
+          <fieldset class="field">
+            <legend class="field-label">Что заказываешь</legend>
+            <div class="chips" id="cats">
+              <label class="chip"><input type="radio" name="cat" id="cat-shoes" value="shoes" checked><span>Обувь</span></label>
+              <label class="chip"><input type="radio" name="cat" id="cat-clothes" value="clothes"><span>Одежда</span></label>
+              <label class="chip"><input type="radio" name="cat" id="cat-bags" value="bags"><span>Сумки</span></label>
+              <label class="chip"><input type="radio" name="cat" id="cat-perfume" value="perfume"><span>Парфюм и косметика</span></label>
+              <label class="chip"><input type="radio" name="cat" id="cat-other" value="other"><span>Другое</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="field-label" for="kg">Вес с упаковкой</label>
+            <div class="input-wrap">
+              <input class="input input-sm" id="kg" name="kg" type="text" inputmode="decimal" autocomplete="off" value="1">
+              <span class="input-unit">кг</span>
+            </div>
+            <p class="hint">Подставили средний вес для категории. Доставку считаем по фактическому весу посылки.</p>
+          </div>
+
+          <fieldset class="field">
+            <legend class="field-label">Доставка</legend>
+            <div class="chips methods">
+              <label class="chip method"><input type="radio" name="method" id="m-air" value="air" checked><span><b>Авиа ручная</b><small>1–5 дней</small></span></label>
+              <label class="chip method"><input type="radio" name="method" id="m-cargo" value="cargo"><span><b>Авиа грузовая</b><small>8–15 дней</small></span></label>
+              <label class="chip method"><input type="radio" name="method" id="m-auto" value="auto"><span><b>Авто</b><small>20–30 дней</small></span></label>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="calc-result" id="calcResult" aria-live="polite">
+          <div class="rate-line">
+            <span class="kicker">Курс юаня</span>
+            <span><b class="num"><span data-cfg="rate">13,1</span> ₽</b> <span class="small">на <span data-cfg="rateDate">04.11.2026</span></span></span>
+          </div>
+          <ul class="receipt">
+            <li><span>Товар<small id="rProductNote">699 ¥ × 13,1</small></span><b id="rProduct">9 157 ₽</b></li>
+            <li><span>Комиссия за позицию<small id="rFeeNote">товар до 10 000 ₽</small></span><b id="rFee">1 000 ₽</b></li>
+            <li><span>Доставка<small id="rDelNote">1 кг × 200 ¥</small></span><b id="rDel">2 620 ₽</b></li>
+          </ul>
+          <div class="total">
+            <span class="kicker">Итого ориентировочно</span>
+            <span class="total-sum" id="rTotal">12 777 ₽</span>
+            <span class="total-eta" id="rEta">в пути 1–5 дней от склада в Китае</span>
+          </div>
+          <a class="btn btn-primary" id="calcOrder" data-goal="calc_order" href="https://t.me/POIZONJETMANAGER" target="_blank" rel="noopener">Оформить по этому расчёту</a>
+          <a class="btn btn-ghost" data-link="bot" data-goal="bot_click" href="https://t.me/poizon_jet_calc_bot" target="_blank" rel="noopener">Каталог и трекинг в боте</a>
+          <p class="hint">Расчёт ориентировочный. Актуальный курс публикуем каждую неделю в <a data-link="channel" data-goal="channel_click" href="https://t.me/Poizon_Jet" target="_blank" rel="noopener">канале</a>. От 5 позиций — индивидуальные условия.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Тарифы -->
+  <section class="section" id="tariffs">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Тарифы · без скрытых доплат</p>
+        <h2 class="h2">Сроки и <span class="blue">цены</span> доставки</h2>
+        <p>Платишь только фактический вес заказа. На доставку не делаем наценку, на большие заказы считаем индивидуально.</p>
+      </div>
+      <div class="tariffs">
+        <div class="board" role="table" aria-label="Тарифы доставки из Китая">
+          <div class="board-head" role="row"><span role="columnheader">Тариф</span><span role="columnheader">В пути</span><span role="columnheader">Ставка</span></div>
+          <div class="board-row" role="row">
+            <span class="t-name" role="cell">Авиа ручная</span>
+            <span class="t-days" role="cell">1–5 дней</span>
+            <span class="t-rate" role="cell">одежда <b><span data-cfg="airClothes">170</span> ¥/кг</b><br>обувь и сумки <b><span data-cfg="airShoes">200</span> ¥/кг</b></span>
+          </div>
+          <div class="board-row" role="row">
+            <span class="t-name" role="cell">Авиа грузовая</span>
+            <span class="t-days" role="cell">8–15 дней</span>
+            <span class="t-rate" role="cell">любой товар <b><span data-cfg="cargo">150</span> ¥/кг</b></span>
+          </div>
+          <div class="board-row" role="row">
+            <span class="t-name" role="cell">Авто</span>
+            <span class="t-days" role="cell">20–30 дней</span>
+            <span class="t-rate" role="cell"><b><span data-cfg="autoMin">300</span>–<span data-cfg="autoMax">400</span> ₽/кг</b>, без минимального веса<br>от 50 кг — индивидуально</span>
+          </div>
+          <p class="board-note">Сроки считаются от склада в Китае и зависят от продавца, рейса и таможни.</p>
+        </div>
+
+        <div class="ladder">
+          <p class="kicker ladder-title">Комиссия за позицию</p>
+          <div class="step"><span>Товар до <span data-cfg="lim1">5 000</span> ₽</span><b><span data-cfg="com1">750</span> ₽</b></div>
+          <div class="step"><span>до <span data-cfg="lim2">10 000</span> ₽</span><b><span data-cfg="com2">1 000</span> ₽</b></div>
+          <div class="step"><span>свыше <span data-cfg="lim2b">10 000</span> ₽</span><b><span data-cfg="com3">1 500</span> ₽</b></div>
+          <div class="step vip"><span>От 5 позиций</span><b>индивидуально</b></div>
+          <p class="promise">Никаких процентов от стоимости вещи: товар + доставка по весу + фиксированная комиссия.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Как заказать -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Как заказать · 5 шагов</p>
+        <h2 class="h2">От фото до <span class="blue">полки</span></h2>
+      </div>
+      <ol class="steps">
+        <li><span class="step-n">01</span><div><h3 class="h3">Найди вещь</h3><p>Сам на площадке или пришли менеджеру фото или ссылку с размером и цветом. Найдём самый выгодный вариант.</p></div></li>
+        <li><span class="step-n">02</span><div><h3 class="h3">Посчитай</h3><p>В калькуляторе на сайте или в боте. Сумма товара и комиссии известна до оплаты.</p></div></li>
+        <li><span class="step-n">03</span><div><h3 class="h3">Оформи</h3><p>Менеджер подскажет по размеру, срокам, доставке и оплате.</p></div></li>
+        <li><span class="step-n">04</span><div><h3 class="h3">Следи в боте</h3><p>Каждый этап приходит уведомлением:</p>
+          <ul class="track" aria-label="Этапы заказа"><li>оформлен</li><li>выкуплен</li><li>в пути</li><li>на складе в Москве</li><li>готов к выдаче</li><li>выдан</li></ul></div></li>
+        <li><span class="step-n">05</span><div><h3 class="h3">Забери</h3><p>На точке у метро Юго-Западная или получи посылку в своём городе.</p></div></li>
+      </ol>
+      <div class="photo-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        <p><b>Перед отправкой присылаем фото или видео твоего товара.</b> Видишь вещь вживую до того, как она полетит в Москву.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Площадки -->
+  <section class="section" id="markets">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Откуда выкупаем</p>
+        <h2 class="h2">Не только <span class="blue">Poizon</span></h2>
+        <p>Если на Poizon дорого или долго, предложим вариант дешевле или быстрее на другой площадке. Решаешь ты.</p>
+      </div>
+      <div class="markets">
+        <div class="market">
+          <div class="mlogo"><img src="logos/poizon.png" alt="Poizon" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="mlogo-text"><span class="mlogo-cn">得物</span><span class="mlogo-lat">Poizon</span></span></div>
+          <div class="market-body"><p class="kicker">Dewu · 得物</p><h3 class="h3">Poizon</h3><p>Новые вещи, каждая проходит проверку подлинности на площадке.</p></div>
+        </div>
+        <div class="market">
+          <div class="mlogo"><img src="logos/goofish.png" alt="Goofish" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="mlogo-text"><span class="mlogo-cn">闲鱼</span><span class="mlogo-lat">Goofish</span></span></div>
+          <div class="market-body"><p class="kicker">闲鱼 · китайский Авито</p><h3 class="h3">Goofish</h3><p>Новые вещи с бирками часто дешевле Poizon. Заказываем с проверкой на оригинал и присылаем отчёт до подтверждения.</p></div>
+        </div>
+        <div class="market">
+          <div class="mlogo"><img src="logos/taobao.png" alt="Taobao" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="mlogo-text"><span class="mlogo-cn">淘宝</span><span class="mlogo-lat">Taobao</span></span></div>
+          <div class="market-body"><p class="kicker">淘宝 · и другие площадки</p><h3 class="h3">Taobao и другие</h3><p>Выкупим даже у продавца, который работает только по Китаю.</p></div>
+        </div>
+      </div>
+      <div class="belt" aria-label="Площадки, с которых выкупаем">
+        <div class="belt-track" id="beltTrack"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Доверие -->
+  <section class="section" id="trust">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Почему нам доверяют</p>
+        <h2 class="h2">Мы не пропадаем <span class="blue">после оплаты</span></h2>
+      </div>
+      <div class="trust">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          <div><b>Реальная точка в Москве</b><p>Пр-т Вернадского, 109, 2-й этаж, напротив ТЦ «Авеню». Есть адрес, куда можно прийти.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          <div><b>Фото до отправки</b><p>Показываем фактический товар, отправляем только после твоего «ок».</p></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M5 7h14M5 17h9"/></svg>
+          <div><b>Фиксированная комиссия</b><p>От <span data-cfg="com1">750</span> ₽ за позицию. Сумму знаешь до заказа, без процентов от цены.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg>
+          <div><b>Трекинг в боте</b><p>Шесть этапов пути, уведомление на каждый. Заказ не теряется в переписке.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <div><b>Проверка на оригинал</b><p>Проверка Poizon, а на Goofish отчёт о проверке до подтверждения заказа.</p></div>
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6"/><path d="M4 4v4.6h4.6"/></svg>
+          <div><b>Возврат за брак и нашу ошибку</b><p>Вернём стоимость товара и комиссию, если пришёл брак или мы заказали не то.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section class="section" id="reviews">
+    <div class="wrap">
+      <div class="reviews-top">
+        <p class="kicker">Отзывы</p>
+        <span class="swipe-hint" aria-hidden="true">листай →</span>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <div class="review-photo"><img src="reviews/review-123.jpg" alt="Фото заказа: сумка" width="560" height="747" loading="lazy" decoding="async"></div>
+          <div class="review-body"><blockquote>Заказала у ребят классную сумку, все быстро дошло, постоянно пользуюсь их доставкой. Очень понравилось, спасибо!</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
+        </figure>
+        <figure class="review">
+          <div class="review-photo"><img src="reviews/review-131.jpg" alt="Фото заказа: ботинки" width="467" height="600" loading="lazy" decoding="async"></div>
+          <div class="review-body"><blockquote>Очень быстро смогли привезти нужную пару и по хорошей цене. Всё супер, спасибо!</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
+        </figure>
+        <figure class="review">
+          <div class="review-photo"><img src="reviews/review-135.jpg" alt="Фото заказа: кроссовки" width="467" height="600" loading="lazy" decoding="async"></div>
+          <div class="review-body"><blockquote>Уже не первый раз заказываю через Poizon Jet и каждый раз остаюсь очень довольна! Всегда помогают найти товары по самым выгодным ценам, оперативно отвечают на вопросы и максимально быстро всё выкупают. Отдельно хочется отметить скорость доставки — в последний раз первые товары начали приходить уже на 6-й день после оплаты! Также радует выгодный курс, который они всегда стараются сделать ещё лучше для клиента, и приятные цены на доставку.</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
+        </figure>
+        <figure class="review">
+          <div class="review-photo"><img src="reviews/review-140.jpg" alt="Фото заказа: куртка" width="467" height="600" loading="lazy" decoding="async"></div>
+          <div class="review-body"><blockquote>Спасибо Poizon Jet, привезли мне куртку редкого бренда, подошла по размеру, не больше не меньше, буду обращаться ещё</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
+        </figure>
+        <figure class="review">
+          <div class="review-photo"><img src="reviews/review-133.jpg" alt="Фото заказа: картхолдер" width="467" height="600" loading="lazy" decoding="async"></div>
+          <div class="review-body"><blockquote>Картхолдер супер, качественный, доставка очень быстрая, спасибо!</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
+        </figure>
+        <figure class="review">
+          <div class="review-photo"><img src="reviews/review-145.jpg" alt="Фото заказа: шапка" width="467" height="494" loading="lazy" decoding="async"></div>
+          <div class="review-body"><blockquote>Все отлично! Доставили очень быстро, доволен! Буду заказывать еще</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
+        </figure>
+      </div>
+      <div class="reviews-link"><a class="btn btn-ghost" data-link="reviews" href="https://t.me/poizon_jetreviews" target="_blank" rel="noopener">Все отзывы в Telegram</a></div>
+    </div>
+  </section>
+
+  <!-- Реселлерам -->
+  <section class="section" id="resell">
+    <div class="wrap">
+      <div class="resell">
+        <div class="resell-price">
+          <p class="kicker">Реселлерам · от 15 вещей в месяц</p>
+          <span class="big"><span data-cfg="resellFee">500</span> <span>₽</span></span>
+          <p class="lead">фиксированная комиссия за позицию. На большой объём даём индивидуальные условия.</p>
+        </div>
+        <div style="display:grid;gap:22px">
+          <ul class="list">
+            <li>Найдём вариант по лучшей цене и договоримся с поставщиком</li>
+            <li>Выкупим с любой площадки, даже у продавца, который работает только по Китаю</li>
+            <li>Проверим товар перед отправкой, чтобы до тебя не доехал брак</li>
+            <li>Без поиска обменника юаня и потери времени на выкуп</li>
+          </ul>
+          <div><a class="btn btn-primary" data-link="manager" data-msg="reseller" data-goal="reseller_click" href="https://t.me/POIZONJETMANAGER" target="_blank" rel="noopener">Обсудить условия</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Условия -->
+  <section class="section" id="terms">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Условия заказа и возврата</p>
+        <h2 class="h2">Честно <span class="blue">до заказа</span></h2>
+        <p>Мы не продавец: выкупаем на площадках Китая ровно то, что ты указал (ссылка, размер, цвет, модель), и привозим. Параметры фиксируем в переписке, ты подтверждаешь их до оплаты.</p>
+      </div>
+      <div class="terms">
+        <div class="term yes">
+          <h3 class="h3">Возвращаем товар и комиссию</h3>
+          <ul class="list">
+            <li>брак, повреждение, заводской дефект</li>
+            <li>мы ошиблись при оформлении: не тот размер, цвет или модель</li>
+          </ul>
+        </div>
+        <div class="term">
+          <h3 class="h3">Не возвращаем</h3>
+          <ul class="list">
+            <li>не подошёл размер, не понравился, передумал, а товар соответствует заказу</li>
+            <li>товар б/у или уже одобрен тобой по фото перед отправкой</li>
+          </ul>
+        </div>
+      </div>
+      <p class="small" style="margin-top:18px;max-width:70ch">Доставка не возвращается. О скрытом браке сообщи в течение 3 дней после получения. Сроки доставки ориентировочные. <a data-link="offer" href="https://telegra.ph/POIZON-JET--usloviya-zakaza-i-dostavki-09-19" target="_blank" rel="noopener">Полные условия (оферта)</a></p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Частые вопросы</p>
+        <h2 class="h2">Отвечаем <span class="blue">сразу</span></h2>
+      </div>
+      <div class="faq">
+        <details><summary>Это точно оригинал?</summary><p>На Poizon каждая вещь проходит проверку подлинности площадкой. На Goofish заказываем с проверкой на оригинал и присылаем отчёт до того, как ты подтвердишь заказ.</p></details>
+        <details><summary>Сколько ждать заказ?</summary><p>Авиа ручная — 1–5 дней, авиа грузовая — 8–15 дней, авто — 20–30 дней от склада в Китае. Сроки зависят от продавца, рейса и таможни, поэтому мы не обещаем больше, чем можем. Наш рекорд — 2 дня от заказа до Москвы.</p></details>
+        <details><summary>Можно заказать не с Poizon?</summary><p>Да. Выкупаем с Goofish, Taobao, 1688, Pinduoduo, JD, 95 и других китайских площадок.</p></details>
+        <details><summary>Доставляете в другие города?</summary><p>Да, отправим заказ в твой город. Способ и стоимость отправки подскажет менеджер.</p></details>
+        <details><summary>Как отследить заказ?</summary><p>В боте @poizon_jet_calc_bot. Менеджер пришлёт персональную ссылку: нажимаешь — заказ привязывается к твоему Telegram, и о каждом этапе приходит уведомление.</p></details>
+        <details><summary>Что если не подойдёт размер?</summary><p>До заказа поможем с размерной сеткой. Если вещь соответствует заказу, а размер не подошёл, возврата нет: размер выбираешь ты. Деньги возвращаем за брак, повреждение или нашу ошибку при оформлении.</p></details>
+        <details><summary>Можно приехать на точку без заказа?</summary><p>На точке мы только выдаём заказы. Оформление через менеджера в Telegram, там же согласуешь время выдачи.</p></details>
+        <details><summary>Какой курс юаня?</summary><p>Сейчас в калькуляторе <span data-cfg="rate">13,1</span> ₽ за юань (на <span data-cfg="rateDate">04.11.2026</span>). Актуальный курс публикуем каждую неделю в канале @Poizon_Jet.</p></details>
+        <details><summary>Как оплатить?</summary><p>Способ оплаты даёт менеджер при оформлении. Цену товара и комиссию ты знаешь заранее, доставка считается по фактическому весу.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section class="section" id="contacts">
+    <div class="wrap contact">
+      <div style="display:grid;gap:22px">
+        <p class="kicker">Оформить заказ</p>
+        <h2 class="h2">Скинь фото вещи — <span class="blue">найдём и посчитаем</span></h2>
+        <p class="lead">Пиши менеджеру в Telegram: ссылку, фото или название, размер и цвет.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" data-link="manager" data-goal="manager_click" href="https://t.me/POIZONJETMANAGER" target="_blank" rel="noopener">Написать @POIZONJETMANAGER</a>
+        </div>
+        <div class="address">
+          <span class="kicker">Пункт выдачи</span>
+          <b>м. Юго-Западная, пр-т Вернадского, 109</b>
+          <p>2-й этаж, напротив ТЦ «Авеню», 2-й выход из метро. Выдача по договорённости с менеджером.</p>
+          <p><a data-link="map" data-goal="map_click" href="https://yandex.ru/maps/org/poizon_jet/90494048125/" target="_blank" rel="noopener">Poizon Jet на Яндекс Картах</a></p>
+        </div>
+      </div>
+      <div class="links">
+        <a class="link-row" data-link="channel" data-goal="channel_click" href="https://t.me/Poizon_Jet" target="_blank" rel="noopener"><span>Telegram-канал</span><small>@Poizon_Jet</small></a>
+        <a class="link-row" data-link="bot" data-goal="bot_click" href="https://t.me/poizon_jet_calc_bot" target="_blank" rel="noopener"><span>Бот: калькулятор, каталог, трекинг</span><small>@poizon_jet_calc_bot</small></a>
+        <a class="link-row" data-link="reviews" href="https://t.me/poizon_jetreviews" target="_blank" rel="noopener"><span>Отзывы</span><small>@poizon_jetreviews</small></a>
+        <a class="link-row" data-link="tiktok" href="https://www.tiktok.com/@poizonjet" target="_blank" rel="noopener"><span>TikTok</span><small>@poizonjet</small></a>
+        <a class="link-row" data-link="instagram" href="https://www.instagram.com/poizon_jet/" target="_blank" rel="noopener"><span>Instagram*</span><small>@poizon_jet</small></a>
+        <p class="small" style="margin:4px 0 0">* Instagram — продукт компании Meta, деятельность которой признана экстремистской и запрещена в РФ.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <a class="logo" href="#top">POIZON <span>JET</span></a>
+    <nav aria-label="Документы">
+      <a data-link="offer" href="https://telegra.ph/POIZON-JET--usloviya-zakaza-i-dostavki-09-19" target="_blank" rel="noopener">Условия заказа и доставки</a>
+    </nav>
+    <p id="legal" hidden></p>
+    <p>© 2026 POIZON JET. Пункт выдачи заказов из Китая, Москва. Названия брендов и площадок принадлежат их владельцам.</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-ghost" href="#calc">Посчитать</a>
+  <a class="btn btn-primary" data-link="manager" data-goal="manager_click" href="https://t.me/POIZONJETMANAGER" target="_blank" rel="noopener">Написать менеджеру</a>
+</div>
+
+<div class="cookie" id="cookie" hidden>
+  <p>Мы используем cookie и Яндекс.Метрику, чтобы понимать, как работает сайт. <a data-link="privacy" href="privacy.html">Подробнее</a></p>
+  <button class="btn btn-ghost" type="button" id="cookieOk">Понятно</button>
+</div>
+
+<script>
+/* =========================================================
+   НАСТРОЙКИ САЙТА — всё, что меняется, меняется здесь
+   ========================================================= */
+window.PJ_CONFIG = {
+  // Курс юаня для калькулятора и дата. Обновлять раз в неделю вместе с постом в канале.
+  rate: 13.1,
+  rateDate: "04.11.2026",
+
+  // Номер счётчика Яндекс.Метрики (только цифры, в кавычках). Пусто — счётчик не грузится.
+  metrikaId: "114078772",
+
+  // Реквизиты для подвала, например: "ИП Иванов Иван Иванович · ИНН 000000000000 · ОГРНИП 000000000000000"
+  legal: "",
+
+  links: {
+    manager: "https://t.me/POIZONJETMANAGER",
+    channel: "https://t.me/Poizon_Jet",
+    bot: "https://t.me/poizon_jet_calc_bot",
+    reviews: "https://t.me/poizon_jetreviews",
+    tiktok: "https://www.tiktok.com/@poizonjet",
+    instagram: "https://www.instagram.com/poizon_jet/",
+    offer: "https://telegra.ph/POIZON-JET--usloviya-zakaza-i-dostavki-09-19",
+    privacy: "privacy.html",
+    map: "https://yandex.ru/maps/org/poizon_jet/90494048125/",
+    pay: "" // ссылка на страницу оплаты/трекинга старого сайта; пусто — кнопка скрыта
+  },
+
+  // Текст, который подставится в чат с менеджером
+  messages: {
+    manager: "Здравствуйте! Пишу с сайта POIZON JET, хочу оформить заказ.",
+    reseller: "Здравствуйте! Пишу с сайта POIZON JET. Я реселлер, хочу обсудить условия."
+  },
+
+  // Комиссия за позицию: [цена товара в ₽ до (включительно), комиссия ₽]
+  commission: [[5000, 750], [10000, 1000], [Infinity, 1500]],
+  resellFee: 500,
+
+  // Категории: вес по умолчанию (кг) и ставка ручной авиа (¥/кг)
+  categories: {
+    shoes:   { label: "обувь",              weight: 1.0, air: 200 },
+    clothes: { label: "одежда",             weight: 0.5, air: 170 },
+    bags:    { label: "сумки",              weight: 1.0, air: 200 },
+    perfume: { label: "парфюм и косметика", weight: 0.3, air: 170 },
+    other:   { label: "другое",             weight: 0.5, air: 170 }
+  },
+
+  // Способы доставки
+  delivery: {
+    air:   { label: "Авиа ручная",   days: "1–5 дней" },
+    cargo: { label: "Авиа грузовая", days: "8–15 дней", cny: 150 },
+    auto:  { label: "Авто",          days: "20–30 дней", rubMin: 300, rubMax: 400 }
+  },
+
+  // Площадки для бегущей ленты. Логотип подхватится из site/logos/<file>, если файл там лежит.
+  markets: [
+    { name: "Poizon",    cn: "得物",  file: "poizon.png" },
+    { name: "Goofish",   cn: "闲鱼",  file: "goofish.png" },
+    { name: "Taobao",    cn: "淘宝",  file: "taobao.png" },
+    { name: "1688",      cn: "1688", file: "1688.png" },
+    { name: "Pinduoduo", cn: "拼多多", file: "pinduoduo.png" },
+    { name: "JD",        cn: "京东",  file: "jd.png" },
+    { name: "95",        cn: "95分", file: "95.png" }
+  ]
+};
+</script>
+
+<script>
+(function () {
+  "use strict";
+  var C = window.PJ_CONFIG;
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+
+  function rub(n) { return Math.round(n).toLocaleString("ru-RU") + " ₽"; }
+  function num(n, d) { return Number(n).toLocaleString("ru-RU", { maximumFractionDigits: d == null ? 2 : d }); }
+  function parse(v) { var x = parseFloat(String(v).replace(/\s/g, "").replace(",", ".")); return isFinite(x) ? x : 0; }
+
+  /* ---------- Метрика ---------- */
+  var mid = String(C.metrikaId || "").trim();
+  if (mid) {
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t); a = e.getElementsByTagName(t)[0];
+      k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    window.ym(Number(mid), "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true });
+  }
+  function goal(name) {
+    try { if (mid && window.ym) window.ym(Number(mid), "reachGoal", name); } catch (e) {}
+  }
+
+  /* ---------- Ссылки и цели ---------- */
+  function tgWithText(url, text) {
+    if (!text) return url;
+    return url + (url.indexOf("?") > -1 ? "&" : "?") + "text=" + encodeURIComponent(text);
+  }
+  $$("[data-link]").forEach(function (a) {
+    var key = a.getAttribute("data-link");
+    var url = C.links[key];
+    if (key === "pay") { if (url) { a.href = url; a.classList.remove("header-pay"); } return; }
+    if (!url) return;
+    if (key === "manager") {
+      var msgKey = a.getAttribute("data-msg") || "manager";
+      url = tgWithText(url, C.messages[msgKey]);
+    }
+    a.href = url;
+  });
+  document.addEventListener("click", function (e) {
+    var el = e.target.closest("[data-goal]");
+    if (el) goal(el.getAttribute("data-goal"));
+  });
+
+  /* ---------- Цифры из настроек в тексте ---------- */
+  var com = C.commission;
+  var cfg = {
+    rate: num(C.rate),
+    rateDate: C.rateDate,
+    airClothes: C.categories.clothes.air,
+    airShoes: C.categories.shoes.air,
+    cargo: C.delivery.cargo.cny,
+    autoMin: C.delivery.auto.rubMin,
+    autoMax: C.delivery.auto.rubMax,
+    lim1: num(com[0][0], 0), lim2: num(com[1][0], 0), lim2b: num(com[1][0], 0),
+    com1: num(com[0][1], 0), com2: num(com[1][1], 0), com3: num(com[2][1], 0),
+    resellFee: num(C.resellFee, 0)
+  };
+  $$("[data-cfg]").forEach(function (el) {
+    var v = cfg[el.getAttribute("data-cfg")];
+    if (v != null) el.textContent = v;
+  });
+  if (C.legal) { var lg = $("#legal"); lg.textContent = C.legal; lg.hidden = false; }
+
+  /* ---------- Калькулятор ---------- */
+  function fee(productRub) {
+    for (var i = 0; i < com.length; i++) if (productRub <= com[i][0]) return { fee: com[i][1], i: i };
+    return { fee: com[com.length - 1][1], i: com.length - 1 };
+  }
+  function feeNote(i) {
+    if (i === com.length - 1) return "товар свыше " + num(com[i - 1][0], 0) + " ₽";
+    return "товар до " + num(com[i][0], 0) + " ₽";
+  }
+  function compute(cny, catKey, kg, method) {
+    var cat = C.categories[catKey] || C.categories.other;
+    var product = Math.round(cny * C.rate);
+    var f = fee(product);
+    var res = { product: product, fee: f.fee, feeI: f.i, cat: cat, kg: kg, method: method };
+    if (method === "auto") {
+      res.delMin = Math.round(kg * C.delivery.auto.rubMin);
+      res.delMax = Math.round(kg * C.delivery.auto.rubMax);
+      res.totalMin = product + f.fee + res.delMin;
+      res.totalMax = product + f.fee + res.delMax;
+      res.delNote = num(kg) + " кг × " + C.delivery.auto.rubMin + "–" + C.delivery.auto.rubMax + " ₽";
+    } else {
+      var perKg = method === "cargo" ? C.delivery.cargo.cny : cat.air;
+      res.del = Math.round(kg * perKg * C.rate);
+      res.total = product + f.fee + res.del;
+      res.delNote = num(kg) + " кг × " + perKg + " ¥";
+    }
+    return res;
+  }
+
+  var form = $("#calcForm");
+  var cnyInput = $("#cny"), kgInput = $("#kg");
+  var touched = false;
+
+  function current() {
+    return {
+      cny: parse(cnyInput.value),
+      cat: ($("input[name=cat]:checked") || {}).value || "shoes",
+      kg: Math.max(parse(kgInput.value), 0),
+      method: ($("input[name=method]:checked") || {}).value || "air"
+    };
+  }
+
+  function render() {
+    var s = current();
+    var d = C.delivery[s.method];
+    var r = compute(s.cny, s.cat, s.kg, s.method);
+    $("#rProductNote").textContent = num(s.cny) + " ¥ × " + num(C.rate);
+    $("#rProduct").textContent = rub(r.product);
+    $("#rFee").textContent = rub(r.fee);
+    $("#rFeeNote").textContent = feeNote(r.feeI);
+    $("#rDelNote").textContent = r.delNote;
+    var totalEl = $("#rTotal");
+    var totalText;
+    if (s.method === "auto") {
+      $("#rDel").textContent = num(r.delMin, 0) + "–" + rub(r.delMax);
+      totalText = num(r.totalMin, 0) + "–" + rub(r.totalMax);
+      totalEl.classList.add("range");
+    } else {
+      $("#rDel").textContent = rub(r.del);
+      totalText = rub(r.total);
+      totalEl.classList.remove("range");
+    }
+    var shown = s.cny > 0 ? totalText : "—";
+    if (totalEl.textContent !== shown) {
+      totalEl.textContent = shown;
+      var mt = $("#miniTotal");
+      if (mt) mt.textContent = shown;
+      [totalEl, mt].forEach(function (el) {
+        if (!el) return;
+        el.classList.add("flash");
+        clearTimeout(el._t);
+        el._t = setTimeout(function () { el.classList.remove("flash"); }, 380);
+      });
+    }
+    $("#rEta").textContent = "в пути " + d.days + " от склада в Китае";
+
+    var msg = "Здравствуйте! Пишу с сайта POIZON JET, посчитал в калькуляторе:\n" +
+      "Товар: " + num(s.cny) + " ¥ (" + r.cat.label + ", ~" + num(s.kg) + " кг)\n" +
+      "Доставка: " + d.label.toLowerCase() + ", " + d.days + "\n" +
+      "Итого ориентировочно: " + totalText.replace(/ /g, " ") + "\n" +
+      "Хочу оформить заказ.";
+    $("#calcOrder").href = tgWithText(C.links.manager, msg);
+  }
+
+  function markTouched() {
+    if (touched) return;
+    touched = true;
+    $("#exampleChip").hidden = true;
+    goal("calc_used");
+  }
+
+  cnyInput.addEventListener("input", function () { markTouched(); render(); });
+  kgInput.addEventListener("input", render);
+  $$("input[name=cat]").forEach(function (r) {
+    r.addEventListener("change", function () {
+      kgInput.value = num(C.categories[r.value].weight);
+      render();
+    });
+  });
+  $$("input[name=method]").forEach(function (r) { r.addEventListener("change", render); });
+  form.addEventListener("submit", function (e) { e.preventDefault(); });
+  render();
+
+  /* ---------- Лента площадок ---------- */
+  var track = $("#beltTrack");
+  function beltItem(m, hidden) {
+    var el = document.createElement("div");
+    el.className = "belt-item";
+    if (hidden) el.setAttribute("aria-hidden", "true");
+    var logo = document.createElement("span");
+    logo.className = "mlogo";
+    var img = new Image();
+    img.alt = hidden ? "" : m.name;
+    img.loading = "lazy";
+    img.onload = function () { logo.classList.add("has-img"); };
+    img.onerror = function () { img.remove(); };
+    img.src = "logos/" + m.file;
+    var txt = document.createElement("span");
+    txt.className = "mlogo-text";
+    txt.innerHTML = '<span class="mlogo-cn"></span>';
+    txt.firstChild.textContent = m.cn;
+    logo.appendChild(img); logo.appendChild(txt);
+    var name = document.createElement("b"); name.textContent = m.name;
+    el.appendChild(logo); el.appendChild(name);
+    return el;
+  }
+  if (track && C.markets) {
+    C.markets.forEach(function (m) { track.appendChild(beltItem(m, false)); });
+    C.markets.forEach(function (m) { track.appendChild(beltItem(m, true)); });
+  }
+
+  /* ---------- Плавное появление блоков ---------- */
+  var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduce && "IntersectionObserver" in window) {
+    var targets = $$(".section-head, .calc, .board, .ladder, .steps > li, .photo-note, .market, .belt, .trust-item, .review, .resell, .term, .faq, .contact > *");
+    targets.forEach(function (el) { el.classList.add("reveal"); });
+    document.documentElement.classList.add("reveal-on");
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    targets.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < innerHeight) el.classList.add("in"); else io.observe(el);
+    });
+  }
+
+  /* ---------- Длинные отзывы ---------- */
+  $$(".review blockquote").forEach(function (q) {
+    if (q.textContent.length < 230) return;
+    q.classList.add("clamp");
+    var btn = document.createElement("button");
+    btn.type = "button"; btn.className = "more"; btn.textContent = "Читать полностью";
+    btn.addEventListener("click", function () {
+      var open = q.classList.toggle("clamp") === false;
+      btn.textContent = open ? "Свернуть" : "Читать полностью";
+    });
+    q.insertAdjacentElement("afterend", btn);
+  });
+
+  /* ---------- Cookie ---------- */
+  var ck = $("#cookie");
+  var seen = false;
+  try { seen = localStorage.getItem("pj_cookie_ok") === "1"; } catch (e) {}
+  if (!seen) ck.hidden = false;
+  $("#cookieOk").addEventListener("click", function () {
+    ck.hidden = true;
+    try { localStorage.setItem("pj_cookie_ok", "1"); } catch (e) {}
+  });
+})();
+</script>
+<!--PJ:BODY-END-->
+</body>
+</html>
