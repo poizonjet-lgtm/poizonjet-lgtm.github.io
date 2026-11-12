@@ -644,6 +644,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .address { margin-top: 8px; padding: 20px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 6px; }
 .address b { color: var(--fg); font-size: 18px; }
 .address p { margin: 0; }
+.map-embed { margin-top: 10px; border-radius: 12px; overflow: hidden; border: 1px solid var(--line-strong); height: 300px; background: var(--surface); }
+.map-embed iframe { display: block; width: 100%; height: 100%; border: 0; }
 
 /* ---------- Подвал ---------- */
 .footer { border-top: 1px solid var(--line); padding-block: 32px 40px; font-size: 14px; color: var(--muted); }
@@ -1088,7 +1090,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
           <div class="review-body"><blockquote>Все отлично! Доставили очень быстро, доволен! Буду заказывать еще</blockquote><figcaption>Отзыв из Telegram</figcaption></div>
         </figure>
       </div>
-      <div class="reviews-link"><a class="btn btn-ghost" data-link="reviews" href="https://t.me/poizon_jetreviews" target="_blank" rel="noopener">Все отзывы в Telegram</a></div>
+      <div class="reviews-link btn-row"><a class="btn btn-ghost" data-link="reviews" href="https://t.me/poizon_jetreviews" target="_blank" rel="noopener">Все отзывы в Telegram</a><a class="btn btn-ghost" data-link="ymaps_reviews" data-goal="yandex_reviews_click" href="https://yandex.ru/maps/org/poizon_jet/90494048125/reviews/" target="_blank" rel="noopener">Отзывы на Яндекс Картах</a></div>
     </div>
   </section>
 
@@ -1177,7 +1179,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
           <span class="kicker">Пункт выдачи</span>
           <b>м. Юго-Западная, пр-т Вернадского, 109</b>
           <p>2-й этаж, напротив ТЦ «Авеню», 2-й выход из метро. Выдача по договорённости с менеджером.</p>
-          <p><a data-link="map" data-goal="map_click" href="https://yandex.ru/maps/org/poizon_jet/90494048125/" target="_blank" rel="noopener">Poizon Jet на Яндекс Картах</a></p>
+          <p><a data-link="map" data-goal="map_click" href="https://yandex.ru/maps/org/poizon_jet/90494048125/" target="_blank" rel="noopener">Poizon Jet на Яндекс Картах</a> · <a data-link="yreview" data-goal="yandex_review_click" href="https://yandex.ru/profile/90494048125?intent=reviews" target="_blank" rel="noopener">Оставить отзыв</a></p>
+          <div class="map-embed"><iframe src="https://yandex.ru/map-widget/v1/?z=16&amp;ol=biz&amp;oid=90494048125" title="Пункт выдачи Poizon Jet на карте" loading="lazy" allowfullscreen></iframe></div>
         </div>
       </div>
       <div class="links">
@@ -1238,6 +1241,8 @@ window.PJ_CONFIG = {
     offer: "https://telegra.ph/POIZON-JET--usloviya-zakaza-i-dostavki-09-19",
     privacy: "privacy.html",
     map: "https://yandex.ru/maps/org/poizon_jet/90494048125/",
+    ymaps_reviews: "https://yandex.ru/maps/org/poizon_jet/90494048125/reviews/",
+    yreview: "https://yandex.ru/profile/90494048125?intent=reviews",
     pay: "" // ссылка на страницу оплаты/трекинга старого сайта; пусто — кнопка скрыта
   },
 
